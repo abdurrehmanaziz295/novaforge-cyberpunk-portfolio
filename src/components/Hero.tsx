@@ -76,7 +76,7 @@ const Hero = () => {
         </h1>
         
         <div className="text-xl md:text-2xl text-gray-300 mb-4 font-mono">
-          &gt; Full-Stack Architect & Digital Sorcerer
+          &gt; Full-Stack Architect &amp; Digital Sorcerer
         </div>
         
         <div className="text-lg text-cyan-400 mb-8 font-mono">
@@ -133,19 +133,19 @@ const Hero = () => {
         {/* Scrolling Code Background */}
         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-10 text-xs font-mono text-green-400 overflow-hidden w-64 h-96">
           <div className="animate-scroll-up space-y-1">
-            <div>const hackNASA = () => {"{"}</div>
+            <div>const hackNASA = () =&gt; &#123;</div>
             <div>  console.log('Access granted');</div>
             <div>  return deployToMars();</div>
-            <div>{"}"}</div>
+            <div>&#125;</div>
             <div>// TODO: Take over the world</div>
-            <div>if (coffee.level < 50) {"{"}</div>
+            <div>if (coffee.level &lt; 50) &#123;</div>
             <div>  developer.efficiency = 0;</div>
-            <div>{"}"}</div>
-            <div>function breakInternet() {"{"}</div>
-            <div>  while(true) {"{"}</div>
+            <div>&#125;</div>
+            <div>function breakInternet() &#123;</div>
+            <div>  while(true) &#123;</div>
             <div>    createAwesomeStuff();</div>
-            <div>  {"}"}</div>
-            <div>{"}"}</div>
+            <div>  &#125;</div>
+            <div>&#125;</div>
           </div>
         </div>
       </div>
