@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -101,5 +102,44 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Cyberpunk Styles */
+@layer utilities {
+  .retro-mode {
+    background: linear-gradient(45deg, #ff00ff, #00ffff) !important;
+    animation: retro-blink 0.5s infinite alternate;
+  }
+  
+  @keyframes retro-blink {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+  }
+  
+  .neon-border {
+    box-shadow: 0 0 5px currentColor, inset 0 0 5px currentColor;
+  }
+  
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
   }
 }
